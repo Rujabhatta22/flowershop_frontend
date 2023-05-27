@@ -5,7 +5,7 @@ export default function Write() {
     <div className="write">
       <img
         className="writeImg"
-        src="https://images.pexels.com/photos/6685428/pexels-photo-6685428.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+        src="https://iamafoodblog.b-cdn.net/wp-content/uploads/2019/03/irish-boxty-potato-pancakes-recipe-8561w-600x400.jpg"
         alt=""
       />
       <form className="writeForm">
@@ -24,7 +24,7 @@ export default function Write() {
         <div className="writeFormGroup">
           <textarea
             className="writeInput writeText"
-            placeholder="Tell your story..."
+            placeholder=" Write something.."
             type="text"
             autoFocus={true}
           />

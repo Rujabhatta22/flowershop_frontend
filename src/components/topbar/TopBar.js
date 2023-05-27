@@ -1,6 +1,8 @@
 import "./topbar.css"
+import { Link } from "react-router-dom";
 
 export default function TopBar() {
+  const user = false;
   return (
       <div className='top'>
           <div className="topLeft">
@@ -12,25 +14,46 @@ export default function TopBar() {
           <div className="topCenter">
               <ul className="topList">
           <li className="topListItem">
-              HOME
+            <Link className="link" to="/">HOME</Link>
                   </li>
-                  <li className="topListItem">
-              CATEGORY
-          </li>
-          <li className="topListItem">ABOUT</li>
-          <li className="topListItem">CONTACT</li>
           <li className="topListItem">
-              CREATE
+            <Link className="link" to="/category">CATEGORY</Link>   
           </li>
-         <li className="topListItem">LOGOUT</li>
+          <li className="topListItem">
+            <Link className="link" to="/about">ABOUT</Link>
+          </li>
+          <li className="topListItem">
+            <Link className="link" to="/contact">CONTACT</Link>
+          </li>
+          <li className="topListItem">
+              <Link className="link" to="/write">CREATE</Link>
+          </li>
+          <li className="topListItem">
+            {user && "LOGOUT"}
+         </li>
         </ul>
             </div>
-          <div className="topRight">
+      <div className="topRight">
+        {
+          user ? (
+
               <img
               className="topImg"
               src="https://images.pexels.com/photos/3764119/pexels-photo-3764119.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt=""
               />
+          ) : (
+              <ul className="topList">
+                <li className="topListItem">
+                  <Link className="link" to="/login">LOGIN</Link>
+                </li>
+                <li className="topListItem"></li>
+                <Link className="link" to="/register">REGISTER</Link>
+                <li/>
+                </ul>
+            )
+        }
+          
             <i className="topSearchIcon fas fa-search"></i>
             </div>
 
