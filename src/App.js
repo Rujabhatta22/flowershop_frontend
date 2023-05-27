@@ -1,13 +1,17 @@
 import './App.css';
-import Login from './components/account/Login';
+import Home from './pages/home/Home';
+import TopBar from './topbar/TopBar';
 
 
 function App() {
   return (
-    <div style={{marginTop: 250}}>
-      
-      <Login/>
-    </div>
+    <>
+    <TopBar />
+    <Home/>
+    {/* <div style={{marginTop: 250}}>
+    { <Login/> }
+     </div> */}
+      </>
   );
 }
 
