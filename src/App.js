@@ -2,13 +2,16 @@ import './App.css';
 import Home from './pages/home/Home';
 import TopBar from './components/topbar/TopBar';
 import Single from './pages/single/Single';
+import Write from './pages/write/Write';
+import Settings from './pages/settings/Setting';
 
 
 function App() {
   return (
     <>
-    <TopBar />
-    <Single/>
+      <TopBar />
+      <Settings/>
+    {/* <Single/> */}
     {/* <div style={{marginTop: 250}}>
     { <Login/> }
      </div> */}
