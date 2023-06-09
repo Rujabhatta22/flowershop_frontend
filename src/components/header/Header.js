@@ -3,14 +3,11 @@ import "./header.css"
 
 export default function Header() {
   return (
-       <div className="header">
-      <div className="headerTitles">
-        <span className="headerTitleLg">BLOG</span>
-      </div>
+       <div>
       <img
         className="headerImg"
-        src="https://media.istockphoto.com/id/1381637603/photo/mountain-landscape.jpg?b=1&s=170667a&w=0&k=20&c=MBaQEp6lxIWgZV0eFqQ8d2_zDbYuFk5LEFBawDinLhw="
-        alt=""
+        src="https://images.unsplash.com/photo-1505330622279-bf7d7fc918f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVzaW5lc3MlMjBibG9nfGVufDB8fDB8fHww&w=1000&q=80"
+        alt="homepageimg"
       />
     </div>
   )

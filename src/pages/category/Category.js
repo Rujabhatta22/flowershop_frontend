@@ -2,7 +2,7 @@ import "./category.css";
 
 export default function Category() {
   return (
-    <div className="settingsWrapper">
+    <div className="sidebarItem">
       <div className="settingsWrapper">
           <div >
             <img
