@@ -11,9 +11,11 @@ import Register from './pages/register/Register';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import About from './pages/aboutus/About';
 import Category from './pages/category/Category';
+import { useContext } from 'react';
+import { Context } from './context/Context';
 
 function App() {
-  const user = false;
+  const { user } = useContext(Context);
   return (
     <Router>
       <TopBar />
