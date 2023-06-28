@@ -2,6 +2,7 @@ import "./register.css"
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import axios from 'axios';
+import { message } from "antd";
 
 export default function Register() {
   const [username, setUsername] = useState("");
@@ -20,6 +21,8 @@ export default function Register() {
         password,
       });
       res.data && window.location.replace("/login")
+            message.success("Register successfull")
+
     } catch (err) {
       setError(true);
     }

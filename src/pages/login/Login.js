@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useContext, useRef } from "react";
 import { Context } from '../../context/Context';
 import axios from "axios";
+import { message } from 'antd';
 
 export default function Login() {
   const userRef = useRef();
@@ -17,7 +18,8 @@ export default function Login() {
         username: userRef.current.value,
         password: passwordRef.current.value,
       });
-      dispatch({ type: "LOGIN_SUCCESS", payload:res.data });
+      dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
+      message.success("Login success")
     } catch (err) {
       dispatch({ type: "LOGIN_FAILURE"});
     }

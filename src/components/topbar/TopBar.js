@@ -2,12 +2,15 @@ import "./topbar.css"
 import { Link } from "react-router-dom";
 import { useContext } from 'react';
 import { Context } from '../../context/Context';
+import { message } from "antd";
 
 export default function TopBar() {
   const { user, dispatch } = useContext(Context);
   
   const handleLogout = () => {
-    dispatch({type:"LOGOUT"})
+    dispatch({ type: "LOGOUT" })
+    message.success("Logout success")
+
   }
 
   return (
