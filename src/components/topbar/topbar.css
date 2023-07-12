@@ -10,7 +10,7 @@
     font-family: "Josefin Sans", sans-serif;
 }
 
-.topLeft,.topRight {
+.topLeft, .topRight {
     flex: 3;
     display: flex;
     align-items: center;
@@ -54,6 +54,7 @@
     object-fit: cover;
     margin-right: 15px;
     cursor: pointer;
+
 }
 
 .topSearchIcon {

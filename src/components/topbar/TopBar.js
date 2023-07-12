@@ -6,7 +6,8 @@ import { message } from "antd";
 
 export default function TopBar() {
   const { user, dispatch } = useContext(Context);
-  
+    const PF = "http://localhost:3000/images/profile.jpg"
+
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" })
     message.success("Logout success")
@@ -44,14 +45,16 @@ export default function TopBar() {
         </ul>
             </div>
       <div className="topRight">
+
         {
           user ? (
-
+            <Link to="/settings">
               <img
               className="topImg"
-              src={user.profilePic}
+              src={PF + user.profilePic}
               alt="profile"
               />
+              </Link>
           ) : (
               <ul className="topList">
                 <li className="topListItem">

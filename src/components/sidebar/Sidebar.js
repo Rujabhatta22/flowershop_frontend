@@ -44,7 +44,7 @@ export default function Sidebar() {
               </div>
         <a 
           href="mailto:Inkspire@gmail.com"
-          className="sidebarItem">
+          className="sidebarItem link">
                 <h4>Inkspire@gmail.com</h4>
               </a>
           </div>
