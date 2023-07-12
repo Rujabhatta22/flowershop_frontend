@@ -1,101 +1,59 @@
-.settings {
+.aboutContainer {
     display: flex;
-}
-
-.settingsWrapper {
-    flex: 9;
-    padding: 20px;
-}
-
-.settingsTitle {
-    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    min-height: 100vh;
+    background-color: #f5f5f5;
 }
 
-.settingsTitleUpdate {
-    font-size: 30px;
-    margin-bottom: 20px;
-    color: lightcoral;
-}
-
-.settingsTitleDelete {
-    color: red;
-    font-size: 12px;
-    cursor: pointer;
-}
-
-.settingsForm {
+.aboutContent {
     display: flex;
     flex-direction: column;
-}
-
-.settingsPP {
-    display: flex;
     align-items: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.settingsPP>img {
-    height: 70px;
-    width: 70px;
-    border-radius: 20px;
-    object-fit: cover;
-}
-
-.settingsPPIcon {
-    width: 25px;
-    height: 25px;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    border-radius: 50%;
-    margin-left: 10px;
-    color: white;
-    background-color: lightcoral;
-    cursor: pointer;
-}
-
-.settingsPPButton:focus {
-    outline-style: none;
-}
-
-.settingsForm>label {
-    font-size: 20px;
-    margin-top: 20px;
-}
-
-.settingsPPInput {
-    width: 30%;
-}
-
-.settingsForm>input {
-    color: gray;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 30px;
-    border: none;
-    border-bottom: 1px solid lightgray;
-}
-
-.settingsSubmitButton {
-    align-self: center;
-    width: 150px;
-    border: none;
+    max-width: 800px;
+    padding: 40px;
+    background-color: #fff;
     border-radius: 10px;
-    color: white;
-    background-color: teal;
-    padding: 10px;
-    margin-top: 20px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.settingsSubmitButton:hover {
-    background-color: rgb(1, 114, 114);
+.aboutImage img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.aboutText {
+    text-align: center;
+}
+
+.aboutTitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.aboutDescription {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.aboutMissionVisionTitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.aboutMissionVisionDescription {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
