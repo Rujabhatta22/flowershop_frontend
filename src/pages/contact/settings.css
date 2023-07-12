@@ -1,101 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 .settings {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
 }
 
 .settingsWrapper {
-    flex: 9;
+    width: 80%;
+    background-color: #fff;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .settingsTitle {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 .settingsTitleUpdate {
     font-size: 30px;
-    margin-bottom: 20px;
-    color: lightcoral;
+    color: #333;
 }
 
 .settingsTitleDelete {
     color: red;
-    font-size: 12px;
+    font-size: 14px;
     cursor: pointer;
 }
 
-.settingsForm {
+.settingsContent {
     display: flex;
-    flex-direction: column;
+    margin-top: 20px;
 }
 
-.settingsPP {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
+.settingsImage img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.settingsDescription {
+    margin-left: 20px;
+}
+
+.settingsDescription h2 {
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
-.settingsPP>img {
-    height: 70px;
-    width: 70px;
-    border-radius: 20px;
+.settingsDescription p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.settingsDescription ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.settingsDescription ul li {
+    margin-bottom: 5px;
+}
+
+.settingsDescription ul li i {
+    margin-right: 5px;
+}
+
+.teamSection {
+    margin-top: 40px;
+}
+
+.teamMembers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.teamMember {
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+}
+
+.teamMember img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     object-fit: cover;
 }
 
-.settingsPPIcon {
-    width: 25px;
-    height: 25px;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    border-radius: 50%;
-    margin-left: 10px;
-    color: white;
-    background-color: lightcoral;
-    cursor: pointer;
+.teamMember h3 {
+    font-size: 18px;
+    margin: 10px 0;
 }
 
-.settingsPPButton:focus {
-    outline-style: none;
+.teamMember p {
+    color: #888;
+    font-size: 14px;
 }
 
-.settingsForm>label {
-    font-size: 20px;
-    margin-top: 20px;
-}
-
-.settingsPPInput {
-    width: 30%;
-}
-
-.settingsForm>input {
-    color: gray;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 30px;
-    border: none;
-    border-bottom: 1px solid lightgray;
-}
-
-.settingsSubmitButton {
-    align-self: center;
-    width: 150px;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    background-color: teal;
-    padding: 10px;
-    margin-top: 20px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.settingsSubmitButton:hover {
-    background-color: rgb(1, 114, 114);
-}
+/* Font Awesome Icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');

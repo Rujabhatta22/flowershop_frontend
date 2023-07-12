@@ -1,44 +1,45 @@
-import "./topbar.css"
+import axios from "axios"
+import { useEffect, useState } from "react"
+import Post from "../../components/posts/Posts"
+import { useLocation } from 'react-router-dom';
 import { Link } from "react-router-dom";
 import { useContext } from 'react';
 import { Context } from '../../context/Context';
 import { message } from "antd";
 
-export default function TopBar() {
-  const { user, dispatch } = useContext(Context);
-    const PF = "http://localhost:3000/images/profile.jpg"
+export default function Admin() {
+      const { user, dispatch } = useContext(Context);
 
-  const handleLogout = () => {
+    const [posts, setPosts] = useState([]);
+    const {search} = useLocation();
+    const PF = "http://localhost:3000/images/profile.jpg"
+const handleLogout = () => {
     dispatch({ type: "LOGOUT" })
     message.success("Logout success")
 
   }
-
-  return (
-      <div className='top'>
-          <div className="topLeft">
-            <i className="topIcon fab fa-facebook-square"></i>
-            <i className="topIcon fab fa-instagram-square"></i>
-            <i className="topIcon fab fa-pinterest-square"></i>
-            <i className="topIcon fab fa-twitter-square"></i>
-            </div>
+    
+    useEffect(() => {
+        const fetchPosts = async () => {
+            const res = await axios.get("/posts"+search)
+            setPosts(res.data)
+        }
+        
+        fetchPosts();
+    } )
+    
+    return (
+        <>
+             <div className='top'>
           <div className="topCenter">
               <ul className="topList">
           <li className="topListItem">
-            <Link className="link" to="/">HOME</Link>
+            <Link className="link" to="/admin">POSTS</Link>
                   </li>
           <li className="topListItem">
-            <Link className="link" to="/category">CATEGORY</Link>   
+            <Link className="link" to="/users">USERS</Link>   
           </li>
-          <li className="topListItem">
-            <Link className="link" to="/about">ABOUT</Link>
-          </li>
-          <li className="topListItem">
-            <Link className="link" to="/contact">CONTACT</Link>
-          </li>
-          <li className="topListItem">
-              <Link className="link" to="/write">WRITE BLOGS</Link>
-          </li>
+
           <li className="topListItem" onClick={handleLogout}>
             {user && "LOGOUT"}
          </li>
@@ -60,9 +61,6 @@ export default function TopBar() {
                 <li className="topListItem">
                   <Link className="link" to="/login">LOGIN</Link>
                 </li>
-                <li className="topListItem">
-                  <Link className="link" to="/register">REGISTER</Link>
-                  </li>
                 <li/>
                 </ul>
             )
@@ -71,5 +69,9 @@ export default function TopBar() {
             </div>
 
     </div>
+      <div className="home">
+                <Post posts={posts}/>
+            </div>
+            </>
   )
 }

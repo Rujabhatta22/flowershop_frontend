@@ -13,11 +13,17 @@ import About from './pages/aboutus/About';
 import Category from './pages/category/Category';
 import { useContext } from 'react';
 import { Context } from './context/Context';
+import Admin from './pages/admin/Admin';
+// import Users from './pages/admin/Users';
 
 function App() {
   const { user } = useContext(Context);
   return (
     <Router>
+      <Routes>
+        <Route exact path="/admin" element={<Admin />} />
+        {/* <Route exact path="/user" element={<Users />} /> */}
+      </Routes>
       <TopBar />
         <Routes>
         <Route exact path="/" element={<Home />} />

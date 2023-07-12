@@ -4,12 +4,17 @@ import { useContext, useRef } from "react";
 import { Context } from '../../context/Context';
 import axios from "axios";
 import { message } from 'antd';
+// import { useState } from "react";
+
 
 export default function Login() {
   const userRef = useRef();
   const passwordRef = useRef();
-  const {dispatch, isFetching } = useContext(Context);
-
+  const { dispatch, isFetching } = useContext(Context);
+  
+  // const [username, setUsername]=useState('')
+  // const [password, setPassword] = useState('')
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     dispatch({ type: "LOGIN_START" });
@@ -18,6 +23,9 @@ export default function Login() {
         username: userRef.current.value,
         password: passwordRef.current.value,
       });
+      // if(username=='admin' & password=='admin'){
+      //      message.success('Login successfully')
+      //   }
       dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
       message.success("Login success")
     } catch (err) {
