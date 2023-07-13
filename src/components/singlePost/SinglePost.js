@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom"
+import { Link, useLocation,useNavigate } from "react-router-dom"
 import "./singlepost.css"
 import { useEffect, useContext } from 'react';
 import  axios  from 'axios';
@@ -6,10 +6,11 @@ import { useState } from 'react';
 import { Context } from '../../context/Context';
 
 export default function SinglePost() {
+  const navigate = useNavigate();
     const location = useLocation()
     const path = (location.pathname.split("/")[2]);
     const [post, setPost] = useState({}) 
-  const PF = "http://localhost:3000/images/postimages/";
+  const PF = "http://localhost:3000";
   const { user } = useContext(Context);
   const [title, setTitle] = useState("")
   const [desc, setDesc] = useState("")
@@ -23,18 +24,21 @@ export default function SinglePost() {
           setPost(res.data);
           setTitle(res.data.title)
           setDesc(res.data.desc)
+          
         };
         getPost()
     }, [path]);
+  
+  
+  const handleDelete = async () => {
+  try {
+    await axios.delete(`/posts/${post._id}`);
+    window.location.href = "/";
+  } catch (err) {
+    // Handle any errors that occur during deletion
+  }
+};
 
-    const handleDelete = async () => {
-    try {
-      await axios.delete(`/posts/${post._id}`, {
-        data: { username: user.username },
-      });
-      window.location.replace("/");
-    } catch (err) {}
-    };
   
   const handleUpdate = async() => {
     try {

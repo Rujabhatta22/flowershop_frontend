@@ -1,72 +1,98 @@
-.write {
-  padding-top: 50px;
+.write-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://e1.pxfuel.com/desktop-wallpaper/355/972/desktop-wallpaper-stock-of-reading-·-pexels-coffee-winter-and-books.jpg');
+  background-size: cover;
 }
 
-.writeImg {
-  margin-left: 150px;
-  width: 70vw;
-  height: 250px;
-  border-radius: 10px;
-  object-fit: cover;
+
+.write-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.write {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.writeTitle {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .writeForm {
-  position: relative;
+  width: 100%;
 }
 
 .writeFormGroup {
-  margin-left: 150px;
-  display: flex;
-  align-items: center;
+  margin-bottom: 20px;
 }
 
-.writeIcon {
-  width: 25px;
-  height: 25px;
-  font-size: 20px;
-  border: 1px solid;
-  border-radius: 50%;
-  color: rgb(129, 125, 125);
+.writeFileLabel {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px 15px;
+  background-color: #eee;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-.writeInput {
-  font-size: 30px;
+.writeIcon {
+  margin-right: 10px;
+}
+
+.writeFileInput {
+  display: none;
+}
+
+.writeImage {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.writeInput,
+.writeTextarea {
+  width: 100%;
+  padding: 10px;
   border: none;
-  padding: 20px;
-  width: 70vw;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  resize: none;
 }
 
-.writeInput::placeholder {
-  color: rgb(189, 185, 185);
-  font-weight: 400;
-}
-
-.writeInput:focus {
-  outline-style: none;
-}
-
-.writeText {
-  width: 70vw;
-  height: 100vh;
-  font-family: inherit;
-  font-size: 20px;
+.writeTextarea {
+  height: 120px;
 }
 
 .writeSubmit {
-  position: absolute;
-  top: 20px;
-  right: 50px;
-  color: white;
-  background-color: teal;
+  width: 100%;
   padding: 10px;
   border: none;
-  border-radius: 10px;
-  font-size: 16px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: teal;
   cursor: pointer;
   display: flex;
+  justify-content: center;
   align-items: center;
+  font-weight: bold;
+}
+
+.writeSubmit:hover {
+  background-color: rgb(1, 114, 114);
 }

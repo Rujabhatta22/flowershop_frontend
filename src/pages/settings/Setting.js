@@ -3,6 +3,7 @@ import Sidebar from "../../components/sidebar/Sidebar";
 import { useContext, useState } from 'react';
 import { Context } from '../../context/Context';
 import axios from 'axios';
+import { message } from 'antd';
 
 export default function Settings() {
   const [file, setFile] = useState(null);
@@ -17,7 +18,8 @@ export default function Settings() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    dispatch({type:"UPDATE_START"})
+    dispatch({ type: "UPDATE_START" })
+    message.success('Profile has been updated successfully.');
     const updatedUser = {
       userId: user._id,
       username, email, password,
