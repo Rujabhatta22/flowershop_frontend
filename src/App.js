@@ -15,6 +15,7 @@ import { useContext } from 'react';
 import { Context } from './context/Context';
 import Admin from './pages/admin/Admin';
 // import Users from './pages/admin/Users';
+import Users from './pages/admin/HomePage';
 
 function App() {
   const { user } = useContext(Context);
@@ -22,6 +23,7 @@ function App() {
     <Router>
       <Routes>
         <Route exact path="/admin" element={<Admin />} />
+        <Route exact path="/users" element={<Users/>} />
         
         {/* <Route exact path="/user" element={<Users />} /> */}
       </Routes>

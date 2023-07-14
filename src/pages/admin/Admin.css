@@ -1,0 +1,68 @@
+/* Layout */
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0 20px;
+    
+    
+  }
+  
+  /* List of Users */
+  h2 {
+    margin-top: 20px;
+    
+  }
+  
+  .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Varela Round", Arial, Helvetica, sans-serif;
+    font-weight: 50;
+    font-size: 11px;
+    color: #be5656;
+    line-height: 19px;
+    margin-right: 10px;
+    cursor:alias;
+  }
+  
+  .doctor-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: "Varela Round", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    color: #be56a7;
+    line-height: 19px;
+    margin-top: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .doctor-description {
+    margin-left: 20px;
+    font-size: 1rem;
+    font-style: italic;
+  }
+  
+  .doctor-image {
+    width: 50px;
+    height: 50px;
+    object-fit:contain;
+    border-radius: 500%;
+    margin-left: auto;
+  }
+  
+  /* Add Users Form */
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .form-control {
+    width: 100%;
+  }
+  
+  .btn-primary {
+    margin-top: 10px;
+  }
+  

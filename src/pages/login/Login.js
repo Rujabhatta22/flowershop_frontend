@@ -1,5 +1,5 @@
 import "./login.css";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { useContext, useRef } from "react";
 import { Context } from '../../context/Context';
 import axios from "axios";
@@ -12,8 +12,7 @@ export default function Login() {
   const passwordRef = useRef();
   const { dispatch, isFetching } = useContext(Context);
   
-  // const [username, setUsername]=useState('')
-  // const [password, setPassword] = useState('')
+
   
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -23,9 +22,9 @@ export default function Login() {
         username: userRef.current.value,
         password: passwordRef.current.value,
       });
-      // if(username=='admin' & password=='admin'){
-      //      message.success('Login successfully')
-      //   }
+      if (useRef === 'admin' & passwordRef === 'admin') {
+        return Navigate("/admin")
+        }
       dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
       message.success("Login success")
     } catch (err) {
@@ -52,7 +51,7 @@ export default function Login() {
         </button>
       </form>
       <button className="loginRegisterButton">
-        <Link className="link" to="/register">Sign Up
+        <Link className="link" to="/register">Dont have account? 
         </Link>
       </button>
     </div>

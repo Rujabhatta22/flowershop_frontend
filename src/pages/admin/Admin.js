@@ -36,9 +36,6 @@ const handleLogout = () => {
           <li className="topListItem">
             <Link className="link" to="/admin">POSTS</Link>
                   </li>
-          <li className="topListItem">
-            <Link className="link" to="/users">USERS</Link>   
-          </li>
 
           <li className="topListItem" onClick={handleLogout}>
             {user && "LOGOUT"}

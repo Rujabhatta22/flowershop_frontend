@@ -17,7 +17,7 @@ export default function Sidebar() {
     <div className="sidebar">
           <div className="sidebarItem">
               <span className="sidebarTitle">ABOUT US</span>
-              <img src="images/about.png" alt="aboutus" />
+              <img src="https://www.vocso.com/blog/wp-content/uploads/2022/04/Top-Web-Development-Tools.jpg" alt="aboutus" />
               <p>
                   Welcome to Inkspire!
                   We are passionate about creating a platform that empowers individuals to share their thoughts, experiences, and stories with the world.

@@ -1,5 +1,6 @@
 import React from 'react';
 import './category.css';
+import { Link } from "react-router-dom";
 
 export default function Category() {
   return (
@@ -16,39 +17,40 @@ export default function Category() {
           <div className="categories">
             <div className="categoryItem">
               <i className="fas fa-music"></i>
-              <span className="categoryName">Music</span>
+              {/* <span className="categoryName">Music</span> */}
+              <Link className="link" to="/?cat=Music">MUSIC</Link>  
             </div>
             <div className="categoryItem">
               <i className="fas fa-heart"></i>
-              <span className="categoryName">Life</span>
+              <Link className="link" to="/?cat=Life">LIFE</Link>  
             </div>
             <div className="categoryItem">
               <i className="fas fa-futbol"></i>
-              <span className="categoryName">Sport</span>
+              <Link className="link" to="/?cat=Sport">SPORTS</Link>  
             </div>
             <div className="categoryItem">
               <i className="fas fa-heartbeat"></i>
-              <span className="categoryName">Health</span>
+              <Link className="link" to="/?cat=Health">HEALTH</Link>  
             </div>
             <div className="categoryItem">
               <i className="fas fa-utensils"></i>
-              <span className="categoryName">Food</span>
+              <Link className="link" to="/?cat=Food">FOOD</Link>  
             </div>
             <div className="categoryItem">
               <i className="fas fa-tools"></i>
-              <span className="categoryName">DIY</span>
+              <Link className="link" to="/?cat=DIY">DIY</Link>  
             </div>
             <div className="categoryItem">
               <i className="fas fa-camera"></i>
-              <span className="categoryName">Photography</span>
+              <Link className="link" to="/?cat=Photography">PHOTOGRAPHY</Link>  
             </div>
             <div className="categoryItem">
               <i className="fas fa-globe"></i>
-              <span className="categoryName">Travel</span>
+              <Link className="link" to="/?cat=Travel">TRAVEL</Link>
             </div>
             <div className="categoryItem">
               <i className="fas fa-book"></i>
-              <span className="categoryName">Books</span>
+              <Link className="link" to="/?cat=Books">BOOK</Link>  
             </div>
           </div>
         </div>

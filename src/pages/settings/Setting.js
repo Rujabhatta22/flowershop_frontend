@@ -16,6 +16,12 @@ export default function Settings() {
   const { user, dispatch } = useContext(Context);
   const PF = "http://localhost:3000/images/"
 
+  const handleLogout = () => {
+    dispatch({ type: "LOGOUT" })
+    message.success("Account removed successfully.")
+
+  }
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     dispatch({ type: "UPDATE_START" })
@@ -49,7 +55,9 @@ export default function Settings() {
       <div className="settingsWrapper">
         <div className="settingsTitle">
           <span className="settingsTitleUpdate">Update Your Account</span>
-          <span className="settingsTitleDelete">Remove Account</span>
+          <li className="topListItem" onClick={handleLogout}>
+            {user && "Remove Account"}
+         </li>
         </div>
         <form className="settingsForm " onSubmit={handleSubmit}>
           <label>Profile Picture</label>

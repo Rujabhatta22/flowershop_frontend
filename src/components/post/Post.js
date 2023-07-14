@@ -11,7 +11,7 @@ export default function Post({ post }) {
         src={PF+ post.photo}
         alt="music" />
         )}
-      <div className="postInfo">
+      <div className="postInfo" id="category"> 
         <div className="postCats">{
           post.categories.map(c => (
             <span className="postCat">{c.name}</span>

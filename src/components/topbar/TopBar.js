@@ -37,7 +37,7 @@ export default function TopBar() {
             <Link className="link" to="/contact">CONTACT</Link>
           </li>
           <li className="topListItem">
-              <Link className="link" to="/write">WRITE BLOGS</Link>
+              <Link className="link" to="/write">CREATE BLOGS</Link>
           </li>
           <li className="topListItem" onClick={handleLogout}>
             {user && "LOGOUT"}
