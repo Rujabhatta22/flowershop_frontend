@@ -1,105 +1,123 @@
-.singlePost {
-    flex: 9;
+.singlePostContainer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 900pt;
+    /* Set the maximum width of the container */
+    overflow: hidden;
+    /* Set the maximum height of the container */
 }
 
 .singlePostWrapper {
+    max-width: 800px;
     padding: 20px;
-    padding-right: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: #fff;
     display: flex;
-    flex-direction: column;
+}
+
+.singlePostImgWrapper {
+    flex: 1 1 50%;
+    text-align: center;
+    padding: 20px;
 }
 
 .singlePostImg {
     width: 100%;
-    height: 300px;
-    border-radius: 5px;
+    max-height: 400px;
     object-fit: cover;
+    border-radius: 5px;
+}
+
+.singlePostInfo {
+    flex: 1 1 50%;
+    padding: 20px;
 }
 
 .singlePostTitle {
-    text-align: center;
-    margin: 10px;
-    font-size: 28px;
-    font-family: "Lora", sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-.singlePostTitleInput {
-    margin: 10px;
-    font-size: 28px;
-    font-family: "Lora", serif;
-    text-align: center;
+.singlePostAuthor {
+    margin-right: 10px;
+}
+
+.singlePostDate {
+    color: #888;
+}
+
+.singlePostDesc {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.singlePostButton,
+.checkoutButton {
+    background-color: #007bff;
+    color: #fff;
     border: none;
-    color: gray;
-    border-bottom: 1px solid rgb(230, 221, 221);
-
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
 }
 
-.singlePostTitleInput:focus {
-    outline: none;
+.singlePostButton:hover,
+.checkoutButton:hover {
+    background-color: #0056b3;
 }
 
 .singlePostEdit {
-    float: right;
-    font-size: 16px;
-}
-
-.singlePostIcon {
+    display: inline-block;
     margin-left: 10px;
     cursor: pointer;
 }
 
-.singlePostIcon:first-child {
-    color: teal;
+.singlePostIcon {
+    margin-right: 10px;
 }
 
-.singlePostIcon:last-child {
-    color: tomato;
-}
-
-.singlePostInfo {
-    margin-bottom: 20px;
+.quantityContainer {
     display: flex;
-    justify-content: space-between;
-    font-size: 16px;
-    color: #be9656;
-    font-family: "Varela Round", Arial, Helvetica, sans-serif;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-.singlePostAuthor {
-    margin-left: 5px;
+.quantityControl {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
 }
 
-.singlePostDesc {
-    color: #666;
-    font-size: 18px;
-    line-height: 25px;
-}
-
-.singlePostDesc::first-letter {
-    margin-left: 20px;
-    font-size: 30px;
-    font-weight: 600;
-}
-
-.singlePostDescInput {
+.quantityControl button {
+    background-color: #007bff;
+    color: #fff;
     border: none;
-    color: #666;
-    font-size: 18px;
-    line-height: 25px;
-}
-
-.singlePostDescInput:focus {
-    outline: none;
-}
-
-.singlePostButton{
-    width: 100px;
-    border: none;
-    background-color: rgb(1, 165, 230);
-    padding: 5px;
-    color: white;
     border-radius: 5px;
     cursor: pointer;
-    align-self: flex-end;
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+.quantityControl button:hover {
+    background-color: #0056b3;
+}
+
+.checkoutSection {
+    max-width: 800px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: #fff;
     margin-top: 20px;
 }

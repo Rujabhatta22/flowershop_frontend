@@ -19,9 +19,7 @@ export default function Sidebar() {
               <span className="sidebarTitle">ABOUT US</span>
               <img src="https://www.vocso.com/blog/wp-content/uploads/2022/04/Top-Web-Development-Tools.jpg" alt="aboutus" />
               <p>
-                  Welcome to Inkspire!
-                  We are passionate about creating a platform that empowers individuals to share their thoughts, experiences, and stories with the world.
-                  Our goal is to provide a space where people from all walks of life can come together, connect, and engage in meaningful conversations.
+                  Welcome to FLORIST, where beauty blooms and moments are made special with our enchanting floral arrangements. We take pride in creating exquisite bouquets that convey emotions and celebrate life's precious occasions. Our inspiration comes from nature's finest creations. Each petal, stem, and leaf is chosen with love and care, ensuring that every bouquet is a true work of art.
               </p>
           </div>
           <div className="sidebarItem">
@@ -43,9 +41,9 @@ export default function Sidebar() {
                 <i className="sidebarIcon fab fa-twitter-square"></i> 
               </div>
         <a 
-          href="mailto:Inkspire@gmail.com"
+          href="mailto:florist@gmail.com"
           className="sidebarItem link">
-                <h4>Inkspire@gmail.com</h4>
+                <h4>florist@gmail.com</h4>
               </a>
           </div>
       </div>

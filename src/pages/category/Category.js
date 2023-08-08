@@ -8,49 +8,36 @@ export default function Category() {
       <div className="categoryContent">
         <div className="categoryImage">
           <img
-            src="https://i.pinimg.com/236x/f0/db/26/f0db26bbfb5ba85b28719783973b40a0.jpg"
+            src="https://thursd.com/storage/media/7376/flowers-bloom-in-sophia-ahamed-dark-night-photography-series003.jpeg"
             alt="Category"
           />
         </div>
         <div className="categoryList">
-          <h2 className="categoryTitle">CATEGORIES</h2>
+          <h2 className="categoryTitle">FLOWER Types</h2>
           <div className="categories">
             <div className="categoryItem">
-              <i className="fas fa-music"></i>
-              {/* <span className="categoryName">Music</span> */}
-              <Link className="link" to="/?cat=Music">MUSIC</Link>  
+              <i className="fas fa-rose"></i>
+              <Link className="link" to="/?cat=Roses">ROSES</Link>  
             </div>
             <div className="categoryItem">
-              <i className="fas fa-heart"></i>
-              <Link className="link" to="/?cat=Life">LIFE</Link>  
+              <i className="fas fa-tulip"></i>
+              <Link className="link" to="/?cat=Tulips">TULIPS</Link>  
             </div>
             <div className="categoryItem">
-              <i className="fas fa-futbol"></i>
-              <Link className="link" to="/?cat=Sport">SPORTS</Link>  
+              <i className="fas fa-lotus"></i>
+              <Link className="link" to="/?cat=Lotus">LOTUS</Link>  
             </div>
             <div className="categoryItem">
-              <i className="fas fa-heartbeat"></i>
-              <Link className="link" to="/?cat=Health">HEALTH</Link>  
+              <i className="fas fa-daisy"></i>
+              <Link className="link" to="/?cat=Daisies">DAISIES</Link>  
             </div>
             <div className="categoryItem">
-              <i className="fas fa-utensils"></i>
-              <Link className="link" to="/?cat=Food">FOOD</Link>  
+              <i className="fas fa-sunflower"></i>
+              <Link className="link" to="/?cat=Sunflowers">SUNFLOWERS</Link>  
             </div>
             <div className="categoryItem">
-              <i className="fas fa-tools"></i>
-              <Link className="link" to="/?cat=DIY">DIY</Link>  
-            </div>
-            <div className="categoryItem">
-              <i className="fas fa-camera"></i>
-              <Link className="link" to="/?cat=Photography">PHOTOGRAPHY</Link>  
-            </div>
-            <div className="categoryItem">
-              <i className="fas fa-globe"></i>
-              <Link className="link" to="/?cat=Travel">TRAVEL</Link>
-            </div>
-            <div className="categoryItem">
-              <i className="fas fa-book"></i>
-              <Link className="link" to="/?cat=Books">BOOK</Link>  
+              <i className="fas fa-leaf"></i>
+              <Link className="link" to="/?cat=Greenery">GREENERY</Link>  
             </div>
           </div>
         </div>

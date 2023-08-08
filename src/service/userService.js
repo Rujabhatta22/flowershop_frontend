@@ -1,5 +1,5 @@
 import axios from "axios";
-const baseUrl ="http://localhost:3000/users"
+const baseUrl ="http://localhost:8000/users"
 
 function getAll(){
     const config={

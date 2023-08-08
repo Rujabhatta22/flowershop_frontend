@@ -1,112 +1,143 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-.settings {
+.contactUsContainer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
-    background-color: #f5f5f5;
-    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+    padding-top: 80px;
 }
 
-.settingsWrapper {
-    width: 80%;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.contactUsContent {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    padding: 40px;
 }
 
-.settingsTitle {
+.contactUsImage img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contactUsDescription {
+    max-width: 800px;
+    margin-left: 40px;
+}
+
+.contactUsTitle {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contactUsText {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.contactInfoSection {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    padding: 40px;
 }
 
-.settingsTitleUpdate {
-    font-size: 30px;
-    color: #333;
+.contactInfo {
+    max-width: 600px;
+    margin-right: 40px;
 }
 
-.settingsTitleDelete {
-    color: red;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.settingsContent {
-    display: flex;
-    margin-top: 20px;
-}
-
-.settingsImage img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.settingsDescription {
-    margin-left: 20px;
-}
-
-.settingsDescription h2 {
-    font-size: 20px;
+.contactInfo h2 {
+    font-size: 24px;
+    color: #f74f8a;
     margin-bottom: 10px;
 }
 
-.settingsDescription p {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.5;
-}
-
-.settingsDescription ul {
-    list-style-type: none;
+.contactInfo ul {
+    list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.settingsDescription ul li {
-    margin-bottom: 5px;
+.contactInfo li {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
 }
 
-.settingsDescription ul li i {
-    margin-right: 5px;
+.contactInfo i {
+    font-size: 18px;
+    color: #f74f8a;
+    margin-right: 10px;
 }
 
 .teamSection {
-    margin-top: 40px;
+    max-width: 600px;
+}
+
+.teamSection h2 {
+    font-size: 24px;
+    color: #f74f8a;
+    margin-bottom: 20px;
 }
 
 .teamMembers {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
 
 .teamMember {
-    width: 200px;
-    margin: 20px;
     text-align: center;
+    margin-right: 20px;
 }
 
 .teamMember img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    object-fit: cover;
+    margin-bottom: 10px;
 }
 
 .teamMember h3 {
     font-size: 18px;
-    margin: 10px 0;
+    color: #333;
+    margin-bottom: 5px;
 }
 
 .teamMember p {
-    color: #888;
-    font-size: 14px;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 0;
 }
 
-/* Font Awesome Icons */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+/* Additional styles to make it beautiful */
+.contactUsContainer {
+    background-image: linear-gradient(to bottom right, #fce3ed, #f8dcd1);
+}
+
+.contactUsContent {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+.contactUsTitle {
+    color: #f74f8a;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contactUsText {
+    color: #444;
+}
+
+.contactUsDescription p:last-child {
+    margin-bottom: 0;
+}

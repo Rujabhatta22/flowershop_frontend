@@ -16,6 +16,7 @@ import { Context } from './context/Context';
 import Admin from './pages/admin/Admin';
 // import Users from './pages/admin/Users';
 import Users from './pages/admin/HomePage';
+import OrderConfirmationPage from "./pages/order/OrderConfirmation"
 
 function App() {
   const { user } = useContext(Context);
@@ -38,6 +39,8 @@ function App() {
         <Route path="/settings" element={user ?<Settings/>:<Register />} />
         <Route path="/post/:postId" element={<Single />} />
         <Route path="/contact" element={<Contacts />} />
+        <Route path="/orderconfirmation" element={<OrderConfirmationPage/>} />
+        
       </Routes>
       </Router>
   );

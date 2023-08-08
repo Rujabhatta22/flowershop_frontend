@@ -6,7 +6,7 @@ export default function Header() {
        <div>
       <img
         className="headerImg"
-        src="https://cdn.autonomous.ai/static/upload/images/common/upload/20210708/Aesthetic-Desk-Setup-For-Minimal-Workspace-Design_3e19853add9.jpg"
+        src="https://images.pexels.com/photos/302588/pexels-photo-302588.jpeg?cs=srgb&dl=pexels-theglory-302588.jpg&fm=jpg"
         alt="homepageimg"
       />
     </div>

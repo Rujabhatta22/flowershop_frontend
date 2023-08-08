@@ -1,59 +1,51 @@
-.aboutContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f5f5f5;
+.aboutUsContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
 }
 
-.aboutContent {
+.aboutUsContainer h1 {
+    text-align: center;
+    font-size: 48px;
+    color: #f8095d;
+    /* Floral pink color */
+    margin-bottom: 30px;
+}
+
+.aboutUsContent {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 800px;
-    padding: 40px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.aboutImage img {
+.aboutUsImage img {
     width: 100%;
-    max-width: 500px;
+    max-width: 700px;
     height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.aboutText {
+.aboutUsText {
+    max-width: 900px;
     text-align: center;
+    margin-top: 20px;
+    line-height: 1.2;
+    font-size: 18px;
+    color: #333;
+    /* Dark text color */
 }
 
-.aboutTitle {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
+.aboutUsText p {
     margin-bottom: 20px;
 }
 
-.aboutDescription {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.5;
-    margin-bottom: 40px;
-}
-
-.aboutMissionVisionTitle {
-    font-size: 20px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.aboutMissionVisionDescription {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.5;
-    margin-bottom: 20px;
+/* Floral-inspired background pattern */
+.aboutUsContainer {
+    background: linear-gradient(135deg, #f9f9f9 25%, transparent 25%) -50px 0,
+        linear-gradient(225deg, #f9f9f9 25%, transparent 25%) -50px 0,
+        linear-gradient(315deg, #f9f9f9 25%, transparent 25%),
+        linear-gradient(45deg, #f9f9f9 25%, transparent 25%);
+    background-size: 100px 100px;
+    background-color: #ffeeee;
 }
